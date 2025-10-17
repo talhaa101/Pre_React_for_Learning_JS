@@ -228,11 +228,83 @@
 
 // for...in loop example
 
-const languages = {
-  js: "JavaScript",
-  py: "Python",
-  rb: "Ruby",
-};
-for (key in languages) {
-  console.log(`${key}: ${languages[key]}`);
-}
+// const languages = {
+//   js: "JavaScript",
+//   py: "Python",
+//   rb: "Ruby",
+// };
+// for (key in languages) {
+//   console.log(`${key}: ${languages[key]}`);
+// }
+
+// object methods example
+// const language = {
+//   name: "JavaScript",
+//   type: "Programming Language",
+//   year: 1995,
+// };
+
+// // console.log(Object.keys(language)); // returns array of keys
+// // console.log(Object.values(language)); // returns array of values
+// // console.log(Object.entries(language)); // returns array of [key, value] pairs
+
+// language.version = "ES6"; // adding new key-value pair
+// console.log(language); // modified object
+
+// delete language.year; // deleting key-value pair
+// console.log(language); // modified object
+
+// language["type"] = "Scripting Language"; // modifying value of existing key
+// console.log(language); // modified object
+
+// ==================================
+// spread operator example
+// const arr1 = [1, 2, 3];
+// const arr2 = [4, 5, 6];
+// const combined = [...arr1, ...arr2]; // combining two arrays
+// console.log(combined); // [1, 2, 3, 4, 5, 6]
+
+// // spread operator with objects example
+// const obj1 = { a: 1, b: 2 };
+// const obj2 = { c: 3, d: 4 };
+// const combinedObj = { ...obj1, ...obj2 }; // combining two objects
+// console.log(combinedObj); // { a: 1, b: 2, c: 3, d: 4 }
+
+// // rest operator example
+// function sum(a, b) {
+//   return a + b;
+// }
+
+// console.log(sum(5, 10)); // 15
+
+// function sumAll(...numbers) {
+//   return numbers.reduce((total, num) => total + num, 0);
+// }
+// console.log(sumAll(1, 2, 3, 4, 5)); // 15
+// console.log(sumAll(10, 20, 30)); // 60
+
+// function sum(text, ...rest) {
+//   const restSum = rest.reduce((total, num) => total + num, 0);
+//   return `${text} ${restSum}`;
+// }
+
+// console.log(sum("The sum is:", 1, 2, 3, 4, 5)); // The sum is: 15
+// console.log(sum("Total:", 10, 20, 30)); // Total: 60
+
+// Truthy/ Falsy values in JavaScript
+// Falsy values: false, 0, "", null, undefined, NaN
+
+// const values = [false, 0, "", null, undefined, NaN, "Hello", 42, [], {}];
+
+// const result = "";
+
+// if (!result) {
+//   console.log("Falsy value");
+// } else {
+//   console.log("Truthy value");
+// }
+
+// turnary operator example
+const age = 20;
+const canVote = age >= 18 ? "Yes, can vote" : "No, cannot vote";
+console.log(canVote);
