@@ -1,0 +1,22 @@
+.num1 {
+  color: red;
+}
+
+.num2 {
+  color: blue;
+}
+.num3 {
+  color: green;
+}
+
+.num4 {
+  color: orange;
+}
+
+.btn-1 {
+  /* margin: 10px; */
+  background-color: skyblue;
+  padding: 10px;
+  border: none;
+  border-radius: 100px;
+}

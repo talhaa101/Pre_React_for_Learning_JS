@@ -162,13 +162,77 @@
 // console.log(fruits);
 
 // splice method example
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-console.log(fruits);
-const result1 = fruits.splice(2, 1); // removes 1 item at index 2
-console.log(result1);
-console.log(fruits); // modified original array
-const result = fruits.splice(1, 2, "Kiwi", "Pineapple"); // modifies original array
-console.log(result); // removed items
-console.log(fruits); // modified original array
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(fruits);
+// const result1 = fruits.splice(2, 1); // removes 1 item at index 2
+// console.log(result1);
+// console.log(fruits); // modified original array
+// const result = fruits.splice(1, 2, "Kiwi", "Pineapple"); // modifies original array
+// console.log(result); // removed items
+// console.log(fruits); // modified original array
 
 // main difference between slice and splice is that slice does not modify original array whereas splice modifies original array
+
+// concat method example
+// const fruits1 = ["Banana", "Orange"];
+// const fruits2 = ["Apple", "Mango"];
+// const result = fruits1.concat(fruits2);
+// console.log(result);
+// console.log(fruits1);
+// console.log(fruits2);
+// concat does not modify original arrays
+
+// push method example
+// const fruits = ["Banana", "Orange"];
+// const newLength = fruits.push("Apple", "Mango"); // modifies original array
+// console.log(newLength); // new length of array
+// console.log(fruits); // modified original array
+
+// map method example
+// const numbers = [1, 2, 3, 4, 5];
+// const result = numbers.map((n) => n * 2); // does not modify original array
+// console.log(result);
+// console.log(numbers);
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango", "Pineapple", "Mango"];
+// const ans = fruits.map((f) => {
+//   if (f === "Mango") {
+//     return "Mango (Delicious)";
+//   } else {
+//     return "N/A";
+//   }
+// });
+// console.log(ans);
+
+// reducing an array example
+// const vals = [1, 2, 3, 4, 5];
+// const sum = vals.reduce((total, currentValue) => total + currentValue, 0);
+// console.log(sum);
+
+// // foreach method example
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits.forEach((f, index) => {
+//   console.log(`${index}: ${f}`);
+// });
+
+// // for...of loop example
+// for (const f of fruits) {
+//   console.log(f);
+// }
+
+// for...of loop example
+// const num = [10, 20, 30, 40, 50];
+// for (value of num) {
+//   console.log(value);
+// }
+
+// for...in loop example
+
+const languages = {
+  js: "JavaScript",
+  py: "Python",
+  rb: "Ruby",
+};
+for (key in languages) {
+  console.log(`${key}: ${languages[key]}`);
+}
