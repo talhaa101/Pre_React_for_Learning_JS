@@ -305,6 +305,66 @@
 // }
 
 // turnary operator example
-const age = 20;
-const canVote = age >= 18 ? "Yes, can vote" : "No, cannot vote";
-console.log(canVote);
+// const age = 20;
+// const canVote = age >= 18 ? "Yes, can vote" : "No, cannot vote";
+// console.log(canVote);
+
+//destructuring example
+// const person = {
+//   name: "John",
+//   age: 30,
+//   city: "New York",
+//   education: {
+//     // degree: "Bachelor's",
+//     major: "Computer Science",
+//   },
+// };
+// const { name, age, city } = person; // object destructuring
+// console.log(name); // John
+// console.log(age); // 30
+// console.log(city); // New York
+// const { education: { degree, major } = {} } = person; // nested object destructuring
+// console.log(degree);
+
+// ===============================
+// optional chaining example
+// const person = {
+//   name: "John",
+//     age: 30,
+//     city: "New York",
+//     education: {
+//       // degree: "Bachelor's",
+//       major: "Computer Science",
+//     },
+// };
+// console.log(person.education?.degree); // undefined
+
+// nullish coalescing operator example
+// nullish = null or undefined
+// const username = null;
+// const displayName = username ?? "Guest User";
+// console.log(displayName); // Guest User
+
+//fetch API example
+function fetchData() {
+  const result = fetch("https://jsonplaceholder.typicode.com/posts/1")
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+    })
+    .catch((error) => {
+      console.error("Error fetching data:", error);
+    });
+
+  async function fetchDataAsync() {
+    try {
+      const response = await fetch(
+        "https://jsonplaceholder.typicode.com/posts/1"
+      );
+      const data = await response.json();
+      console.log(data);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  }
+}
